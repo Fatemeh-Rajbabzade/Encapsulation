@@ -2,7 +2,7 @@ public class TransactionAccount extends BankAccount{
     //حداکثر مقدار قایل برداشت بیشتر از موجودی کاربر
     private final double overDraftLimit = 500;
 
-    public AccountTransaction (String accountHolderName, String accountNumber, double initialBalance){
+    public TransactionAccount (String accountHolderName, String accountNumber, double initialBalance){
         super(accountHolderName, accountNumber, initialBalance);
     }
 

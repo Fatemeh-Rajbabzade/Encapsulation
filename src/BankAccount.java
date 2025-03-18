@@ -43,7 +43,7 @@ public abstract class BankAccount {
         return accountHolderName;
     }
 
-    public void setBalance(balance){
+    public void setBalance(double balance){
         this.balance = balance;
     }
 }

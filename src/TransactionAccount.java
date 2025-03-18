@@ -12,20 +12,18 @@ public class TransactionAccount extends BankAccount{
     }
 
     @Override
-    public void withdraw (double amount){
+    public void withdraw (double amount) {
         if (amount > 0) {
-            if(getBalance() + overDraftLimit >= amount){
-            double newBalance =getBalance() - amount;
-            setBalance(newBalance);
-            System.out.println(amount + "were withdrawal from yout account");
-        }
-        else
-            System.out.println("Your account balance is not sufficient");
-    }
-        else
+            if (getBalance() + overDraftLimit >= amount) {
+                double newBalance = getBalance() - amount;
+                setBalance(newBalance);
+                System.out.println(amount + "were withdrawal from yout account");
+            } else
+                System.out.println("Your account balance is not sufficient");
+        } else
             System.out.println("Wrong amount!");
-
-        private void setBalance(double balance) {
+    }
+        public void setBalance(double balance) {
             this.balance = balance;
         }
 }

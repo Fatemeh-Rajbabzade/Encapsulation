@@ -42,6 +42,10 @@ public abstract class BankAccount {
     public String getAccountHolderName(){
         return accountHolderName;
     }
+
+    public void setBalance(balance){
+        this.balance = balance;
+    }
 }
 
 

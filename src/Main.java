@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args){
-        BankCustomer bank = new BankCustomer();
+        BankCustomers bank = new BankCustomers();
         //حساب جاری
         BankAccount account1 = new TransactionAccount("Fateme", "58869", 1200);
         BankAccount account2 = new TransactionAccount("Ali", "8777420", 500);
         BankAccount account3 = new TransactionAccount("Baran", "255406", 1500);
         // حساب پس انداز
-        BankAccount account4 = new SavingAccount("Nima", "888570", 2000);
+        BankAccount account4 = new SavingAccount("Nima", "88850", 2000);
         BankAccount account5 = new SavingAccount("Arman", "6882058", 2500);
         BankAccount account6 = new SavingAccount("Sina", "88450589", 4000);
 
@@ -17,8 +17,8 @@ public class Main {
         bank.addAccount(account5);
         bank.addAccount(account6);
         //جستجو حساب موجود و ناموجود
-        bank.findAccount("58569");
-        bank.findAccount("10");
+        BankAccount foundAccount = bank.findAccount("58869");
+        bank.findAccount("88850");
         //اضافه کردن پول
         System.out.println("balance of account3:" + account3.getBalance());
         account3.deposit(600);

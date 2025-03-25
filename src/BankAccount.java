@@ -15,7 +15,7 @@ public abstract class BankAccount {
     public void deposit(double amount){
         if (amount >= 0) {
             balance += amount;
-            System.out.println(amount + "added to your" + accountNumber + "account");
+            System.out.println(amount + " added to your " + accountNumber + " account");
         }
         else
             System.out.println("Wrong amount!");
@@ -25,7 +25,7 @@ public abstract class BankAccount {
         if (amount >= 0 && amount <= balance)
         {
             balance -= amount;
-            System.out.println(amount + "deducted from your" + accountNumber + "account");
+            System.out.println(amount + " deducted from your " + accountNumber + " account ");
         }
         else
             System.out.println("Wrong amount!");

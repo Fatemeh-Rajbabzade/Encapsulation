@@ -17,7 +17,7 @@ public class TransactionAccount extends BankAccount{
             if (getBalance() + overDraftLimit >= amount) {
                 double newBalance = getBalance() - amount;
                 setBalance(newBalance);
-                System.out.println(amount + "were withdrawal from yout account");
+                System.out.println(amount + " were withdrawal from yout account");
             } else
                 System.out.println("Your account balance is not sufficient");
         } else

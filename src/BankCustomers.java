@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class BankCustomer {
+class BankCustomers {
     private ArrayList<BankAccount> accountsList = new ArrayList<>();
 
     public void addAccount(BankAccount account) {
@@ -16,6 +16,7 @@ class BankCustomer {
     public BankAccount findAccount(String accountNumber) {
         for (BankAccount account : accountsList) {
             if (account.getAccountNumber().equals(accountNumber)) {
+                System.out.println("Account found");
                 return account;
             }
         }

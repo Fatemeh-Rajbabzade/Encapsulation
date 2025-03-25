@@ -18,17 +18,17 @@ public class Main {
         bank.addAccount(account6);
         //جستجو حساب موجود و ناموجود
         BankAccount foundAccount = bank.findAccount("58869");
-        bank.findAccount("88850");
+        bank.findAccount("850");
         //اضافه کردن پول
-        System.out.println("balance of account3:" + account3.getBalance());
+        System.out.println("balance of account3 : " + account3.getBalance());
         account3.deposit(600);
-        System.out.println("Upadate balance of account3:" + account3.getBalance());
+        System.out.println("Upadate balance of account3 : " + account3.getBalance());
         account5.deposit(-900);
         //سود  و چاپ موجودی
         account2.calculateInterest();
-        System.out.println("Update the balance of account2:" + account2.getBalance());
+        System.out.println("Update the balance of account2 : " + account2.getBalance());
         account6.calculateInterest();
-        System.out.println("Update the balance of account6:" + account6.getBalance());
+        System.out.println("Update the balance of account6 : " + account6.getBalance());
         //سه تا برداشت از هر دو نوع حساب
         account1.withdraw(900);
         account2.withdraw(700);
